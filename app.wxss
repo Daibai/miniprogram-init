@@ -1,0 +1,91 @@
+/* 引入font-awesome（Version 4.7.0 ）字体图标 http://fontawesome.dashgame.com/*/
+@import "/css/icon/font-awesome-font-face.wxss";
+@import "/css/icon/font-awesome.min.wxss";
+
+
+view, button, text, image, input, navigator, textarea, scroll-view, movable-area,
+swiper, icon, rich-text, progress, checkbox-group, checkbox, form, label, picker,
+picker-view, radio-group, radio, slider, switch, audio, video, camera,
+live-player, live-pusher, map, open-data, canvas, web-view {
+    box-sizing: border-box;
+    font-size: 36rpx;
+    padding: 0;
+    margin: 0;
+    
+}
+
+button::after {
+    border: none;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+/* 满屏页 */
+.page_100 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+/* view组件hover-class */
+.view-hover-class{
+  background-color: #d9d9d9 !important;
+}
+
+/* 小按钮（cancel） */
+button.btn-small-cancel{
+  display: inline-block;
+  font-size: 30rpx;
+  height: 50rpx;
+  line-height: 48rpx;
+  padding: 0 26rpx;
+  background-color: #fff;
+  color: #ccc;
+  border: 1rpx solid;
+  border-radius: 25rpx;
+}
+/* 小按钮（confirm） */
+button.btn-small-confirm{
+  display: inline-block;
+  font-size: 26rpx;
+  height: 50rpx;
+  line-height: 48rpx;
+  padding: 0 30rpx;
+  background-color: #e26500;
+  color: #fff;
+  border: 1rpx solid #e26500;
+  border-radius: 25rpx;
+
+}
+/* 中按钮 */
+button.btn-medium{
+  display: inline-block;
+  padding: 0 36rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: #e26500;
+  color: #fff;
+  border-radius:  35rpx;
+}
+/* 大按钮 */
+button.btn-large{
+  display: inline-block;
+  padding: 0 120rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: #e26500;
+  color: #fff;
+  border-radius:  35rpx;
+}
+
