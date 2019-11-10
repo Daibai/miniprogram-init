@@ -56,19 +56,24 @@ class Regular {
   phone(data) {
     return /^1[3|4|5|7|8|9][0-9]{9}$/.test(data);
   }
+  //匹配数字(各种数字)
+  number(date) {
+    return /^((0\.0*[1-9]+0*)|([1-9]+0*((\.\d+)|(\d*))))$/.test(data);
+  }
+
 }
 
 
 // 节流函数
-function preventMoreTap(){
+function preventMoreTap() {
   let globalLastTapTime = 0;
-  return function(e){
+  return function (e) {
     let timeStamp = e.timeStamp;
-    if (globalLastTapTime != 0 && Math.abs(timeStamp - globalLastTapTime) < 500){
+    if (globalLastTapTime != 0 && Math.abs(timeStamp - globalLastTapTime) < 500) {
       globalLastTapTime = timeStamp;
       return true;
     }
-    else{
+    else {
       globalLastTapTime = timeStamp;
       return false;
     }
